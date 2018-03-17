@@ -1,0 +1,1 @@
+"D:\workspaces_tfs2010\mybenflex\mybenflex\Branches\New Ideas\backend\vendor\bin\phpunit" --bootstrap ../WTW/helpers/globalHelper.class.php globalHelperTest.php

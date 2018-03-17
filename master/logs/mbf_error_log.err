@@ -1,0 +1,442 @@
+2017-10-28 11:56:42____________
+ERROR 2: preg_replace(): No ending delimiter ',' found on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 738
+
+2017-10-28 12:15:13____________
+ERROR 2: is_null() expects exactly 1 parameter, 0 given on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 734
+
+2017-10-28 12:17:45____________
+ERROR 2: constant(): Couldn't find constant  on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 725
+
+2017-10-28 16:36:49____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDADE_IP on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 814
+
+2017-10-28 17:06:51____________
+ERROR 2: filter_var(): 'regexp' option missing on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 971
+
+2017-10-28 17:09:49____________
+ERROR 2: filter_var(): 'regexp' option missing on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 971
+
+2017-10-28 17:11:20____________
+ERROR 2: filter_var(): 'regexp' option missing on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 971
+
+2017-10-28 17:15:14____________
+ERROR 2: filter_var(): 'regexp' option missing on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 971
+
+2017-10-28 17:16:58____________
+ERROR 2: filter_var(): No ending delimiter '^' found on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 971
+
+2017-10-28 17:50:54____________
+ERROR 8: Undefined variable: whitelist on C:\inetpub\wwwroot\framework\framework\index.php line 122
+
+2017-10-28 21:22:35____________
+ERROR 2: filter_var(): Unknown modifier '-' on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1241
+
+2017-10-29 07:15:00____________
+WTW\HelpersWTW\Helpers\Input:: invalid validation type!
+
+2017-10-29 07:18:40____________
+WTW\HelpersWTW\Helpers\Input:: method requestCallback requires parameter callable!
+
+2017-10-29 07:20:19____________
+WTW\HelpersWTW\Helpers\Input:: method requestCallback requires parameter callable!
+
+2017-10-29 07:23:38____________
+WTW\HelpersWTW\Helpers\Input:: method requestCallback requires parameter callable!
+
+2017-10-29 07:25:20____________
+WTW\HelpersWTW\Helpers\Input:: method requestCallback requires parameter callable!
+
+2017-10-29 07:28:55____________
+WTW\HelpersWTW\Helpers\Input:: method requestCallback requires parameter callable!
+
+2017-10-29 07:34:14____________
+ERROR 8: Undefined variable: adiotionalParams on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 377
+
+2017-10-29 07:35:23____________
+ERROR 8: Undefined variable: adiotionalParams on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 377
+
+2017-10-29 09:37:58____________
+ERROR 8: Undefined variable: image on C:\inetpub\wwwroot\framework\framework\index.php line 152
+
+2017-10-29 09:58:09____________
+ERROR 8: Undefined variable: _FILE on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1414
+
+2017-10-29 11:21:01____________
+ERROR 8: Undefined index: type on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1414
+
+2017-10-29 11:21:58____________
+ERROR 8: Undefined index: size on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1417
+
+2017-10-29 11:30:50____________
+ERROR 8: Undefined variable: length on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1465
+
+2017-10-29 11:34:09____________
+ERROR 8: Undefined variable: length on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1465
+
+2017-10-29 11:34:12____________
+ERROR 8: Undefined variable: length on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1465
+
+2017-10-29 11:34:44____________
+ERROR 8: Undefined variable: length on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1467
+
+2017-10-29 11:34:46____________
+ERROR 8: Undefined variable: length on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1467
+
+2017-10-29 11:39:03____________
+ERROR 8: Undefined variable: filename on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1419
+
+2017-10-29 11:39:18____________
+ERROR 2: finfo_file(DSC03682 - Cópia.JPG): failed to open stream: No such file or directory on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1419
+
+2017-10-29 18:26:09____________
+ERROR 8: Undefined variable: skipfile on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1439
+
+2017-10-29 18:26:45____________
+ERROR 8: Undefined variable: skipefile on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1439
+
+2017-10-29 18:29:06____________
+ERROR 2: finfo_file(): Empty filename or path on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1430
+
+2017-10-30 06:07:19____________
+WTW\HelpersWTW\Helpers\Input:: invalid source!
+
+2017-10-30 06:09:27____________
+WTW\HelpersWTW\Helpers\Input:: invalid source!
+
+2017-10-30 06:10:49____________
+WTW\HelpersWTW\Helpers\Input:: invalid source!
+
+2017-10-30 06:12:21____________
+WTW\HelpersWTW\Helpers\Input:: invalid source!
+
+2017-10-30 06:12:49____________
+WTW\HelpersWTW\Helpers\Input:: invalid source!
+
+2017-11-01 06:10:26____________
+inputParamteres: param x is not in whitelist for $_GET!
+
+2017-11-01 06:14:57____________
+inputParamteres: param x is not in whitelist for $_GET!
+
+2017-11-01 06:48:26____________
+inputParamteres: param x is not in whitelist for $_GET!
+
+2017-11-01 06:51:27____________
+inputParamteres: param a is not in whitelist for $_GET!
+
+2017-11-01 06:54:22____________
+inputParamteres: param controller is not in whitelist for $_GET!
+
+2017-11-01 06:55:32____________
+inputParamteres: param controller is not in whitelist for $_GET!
+
+2017-11-01 11:12:29____________
+Too few arguments to function WTW\Helpers\inputParam::__construct(), 1 passed in C:\inetpub\wwwroot\framework\framework\index.php on line 19 and at least 3 expected
+
+2017-11-01 11:57:23____________
+ERROR 2: constant(): Couldn't find constant  on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1646
+
+2017-11-01 12:01:36____________
+ERROR 2: constant(): Couldn't find constant  on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1647
+
+2017-11-01 12:05:41____________
+ERROR 8: Use of undefined constant FLAG_ - assumed 'FLAG_' on C:\inetpub\wwwroot\framework\framework\WTW\helpers\Input.class.php line 1654
+
+2017-11-01 13:04:18____________
+ERROR 2: Creating default object from empty value on C:\inetpub\wwwroot\framework\framework\WTW\helpers\inputParameters.class.php line 175
+
+2017-11-01 13:05:56____________
+ERROR 2: Creating default object from empty value on C:\inetpub\wwwroot\framework\framework\WTW\helpers\inputParameters.class.php line 175
+
+2017-11-01 13:05:59____________
+ERROR 2: Creating default object from empty value on C:\inetpub\wwwroot\framework\framework\WTW\helpers\inputParameters.class.php line 175
+
+2017-11-01 13:09:12____________
+ERROR 2: Creating default object from empty value on C:\inetpub\wwwroot\framework\framework\WTW\helpers\inputParameters.class.php line 175
+
+2017-11-01 13:11:10____________
+ERROR 2: Creating default object from empty value on C:\inetpub\wwwroot\framework\framework\WTW\helpers\inputParameters.class.php line 176
+
+2017-11-01 13:12:30____________
+ERROR 2: Creating default object from empty value on C:\inetpub\wwwroot\framework\framework\WTW\helpers\inputParameters.class.php line 176
+
+2017-11-01 16:02:19____________
+inputParamteres: param id is not in whitelist for $_GET!
+
+2017-11-01 16:42:57____________
+inputParamteres: param id is not in whitelist for $_GET!
+
+2017-11-01 16:44:41____________
+ERROR 2: strlen() expects parameter 1 to be string, object given on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 21
+
+2017-11-01 17:13:45____________
+Controller:: controller base file framework/framework/Controllers/Home.class.php doesn't exist!
+
+2017-11-01 17:15:16____________
+Controller:: controller base file framework/framework/Controllers/Home.class.php doesn't exist!
+
+2017-11-01 17:37:18____________
+Controller:: controller base file framework/framework/Controllers/Home.class.php doesn't exist!
+
+2017-11-01 17:43:28____________
+Controller:: controller base file framework/framework/Controllers/Home.class.php doesn't exist!
+
+2017-11-01 17:44:08____________
+Controller:: controller base file C:/inetpub/wwwroot/framework/frameworkControllers/Home.class.php doesn't exist!
+
+2017-11-01 17:46:00____________
+Controller:: controller class Home not found!
+
+2017-11-01 17:48:21____________
+Controller:: controller class \Home not found!
+
+2017-11-01 17:53:21____________
+Controller:: controller method \Home->main not found!
+
+2017-11-01 18:35:54____________
+inputParamteres: param id is not in whitelist for $_GET!
+
+2017-11-01 19:23:53____________
+ERROR 8: Undefined property: WTW\Helpers\inputParameters::$getIten on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:24:17____________
+ERROR 8: Undefined property: WTW\Helpers\inputParameters::$getItem on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:25:56____________
+ERROR 8: Undefined property: WTW\Helpers\inputParameters::$getItem on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:36:36____________
+ERROR 4096: Object of class WTW\Helpers\inputParameters could not be converted to string on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:37:00____________
+ERROR 4096: Object of class WTW\Helpers\inputParameters could not be converted to string on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:38:58____________
+ERROR 8: Undefined variable: key on C:\inetpub\wwwroot\framework\framework\index.php line 39
+
+2017-11-01 19:41:35____________
+ERROR 4096: Object of class WTW\Helpers\inputParameters could not be converted to string on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:42:21____________
+ERROR 4096: Object of class WTW\Helpers\inputParameters could not be converted to string on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:42:23____________
+ERROR 4096: Object of class WTW\Helpers\inputParameters could not be converted to string on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:45:35____________
+ERROR 8: Undefined property: WTW\Helpers\inputParameters::$getItem on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-01 19:46:33____________
+ERROR 8: Undefined property: WTW\Helpers\inputParameters::$getItem on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 162
+
+2017-11-11 07:02:04____________
+ERROR 8: Undefined property: Home::$main on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 106
+
+2017-11-11 07:29:02____________
+ERROR 8: Use of undefined constant DIIRECTORY_SEPARATOR - assumed 'DIIRECTORY_SEPARATOR' on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 102
+
+2017-11-11 08:10:27____________
+Controller:: action main doesn't exist!
+
+2017-11-11 08:24:53____________
+Too few arguments to function WTW\MVC\Controller::exportProperties(), 0 passed in C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php on line 123 and exactly 1 expected
+
+2017-11-11 08:35:32____________
+Path C:/inetpub/wwwroot/framework/framework/Views/Home/main.php is not a valid path or is not accessible!
+
+2017-11-11 08:37:44____________
+Path C:/inetpub/wwwroot/framework/framework/Controllers/Home is not a valid path or is not accessible!
+
+2017-11-11 08:38:42____________
+Path C:/inetpub/wwwroot/framework/framework/Views/Home/main is not a valid path or is not accessible!
+
+2017-11-13 22:20:14____________
+ERROR 2: dir(__,__): O sistema n�o conseguiu localizar o ficheiro especificado. (code: 2) on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php line 141
+
+2017-11-13 22:25:59____________
+Too few arguments to function WTW\MVC\View::render(), 0 passed in C:\inetpub\wwwroot\framework\framework\WTW\MVC\Controller.class.php on line 249 and exactly 1 expected
+
+2017-11-13 22:28:02____________
+ERROR 8: Undefined property: stdClass::$nome on C:\inetpub\wwwroot\framework\framework\Views\home\main.php line 19
+
+2017-11-13 22:28:02____________
+ERROR 8: Undefined property: stdClass::$nome on C:\inetpub\wwwroot\framework\framework\Views\home\main.php line 19
+
+2017-11-13 22:38:52____________
+Controller:: controller method \Home->Login not found!
+
+2017-11-13 22:39:02____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-13 22:39:02____________
+Controller:: controller method \Home->Js not found!
+
+2017-11-13 22:39:06____________
+Controller:: controller base file C:/inetpub/wwwroot/framework/framework/Controllers/Css.class.php doesn't exist!
+
+2017-11-13 22:39:06____________
+Controller:: controller base file C:/inetpub/wwwroot/framework/framework/Controllers/Js.class.php doesn't exist!
+
+2017-11-13 22:39:15____________
+Controller:: controller method \Home->Teste not found!
+
+2017-11-13 22:39:33____________
+Controller:: controller method \Home->Er not found!
+
+2017-11-13 22:39:50____________
+Controller:: controller method \Home->Marco not found!
+
+2017-11-13 22:39:55____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-13 22:39:55____________
+Controller:: controller method \Home->Js not found!
+
+2017-11-13 22:40:01____________
+Controller:: controller method \Home->Login not found!
+
+2017-11-13 22:40:30____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-13 22:40:30____________
+Controller:: controller method \Home->Js not found!
+
+2017-11-13 22:40:44____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-13 22:40:44____________
+Controller:: controller method \Home->Js not found!
+
+2017-11-13 22:40:46____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-13 22:40:46____________
+Controller:: controller method \Home->Js not found!
+
+2017-11-13 22:40:49____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-13 22:40:50____________
+Controller:: controller method \Home->Login not found!
+
+2017-11-13 22:40:53____________
+Controller:: controller method \Home->Js not found!
+
+
+2017-11-14 06:40:32____________
+Path C:/inetpub/wwwroot/framework/framework/Viewshome/xpto.html is not a valid path or is not accessible!
+
+2017-11-14 06:41:02____________
+Path C:/inetpub/wwwroot/framework/framework/Views/home/xpto.html is not a valid path or is not accessible!
+
+2017-11-14 07:34:12____________
+Controller:: controller base file C:/inetpub/wwwroot/framework/framework/Controllers/Css.class.php doesn't exist!
+
+2017-11-14 07:34:12____________
+Controller:: controller base file C:/inetpub/wwwroot/framework/framework/Controllers/Js.class.php doesn't exist!
+
+2017-11-14 07:34:38____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 07:34:38____________
+Controller:: controller method \Home->Js not found!
+
+2017-11-14 07:37:23____________
+Controller:: controller method \Home->Xpto1 not found!
+
+2017-11-14 07:40:33____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 07:41:39____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 07:41:57____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 07:42:37____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 07:42:38____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 07:42:47____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:11:52____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:12:25____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:12:28____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:14:31____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:17:27____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:22:16____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:22:57____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:22:59____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:24:20____________
+inputParamteres: param id is not in whitelist for $_GET!
+
+2017-11-14 19:25:30____________
+inputParamteres: param id is not in whitelist for $_GET!
+
+2017-11-14 19:25:34____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:25:47____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-14 19:25:47____________
+Controller:: controller method \Home->Js not found!
+
+2017-11-14 19:25:56____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-15 04:13:45____________
+Controller:: controller method \Home->Css not found!
+
+2017-11-21 06:03:37____________
+Action Filter:: action  not allowed!
+
+2017-11-21 06:06:24____________
+Action Filter:: action  not allowed!
+
+2017-11-21 06:06:26____________
+Action Filter:: action  not allowed!
+
+2017-11-21 06:30:46____________
+ERROR 8: Undefined property: WTW\MVC\Filter::$getKey on C:\inetpub\wwwroot\framework\framework\WTW\MVC\Filter.class.php line 74
+
+2017-11-21 06:57:22____________
+Action Filter:: callable for actionBefore can't be empty!
+
+2017-11-21 07:10:57____________
+Action Filter:: callable \WTW\Helpers\globalHelper::testFilterAfter not found!
+
+2017-11-21 07:15:56____________
+Action Filter:: callable \WTW\Helpers\globalHelper::testFilterBefore not found!
+
+2017-11-21 07:20:50____________
+Method WTW\Helpers\globalHelper::testFilterAfter() does not exist
+
+2017-11-21 07:21:19____________
+Method WTW\Helpers\globalHelper::testFilterAfter() does not exist
+
+2017-11-21 07:22:00____________
+Method WTW\Helpers\globalHelper::testFilterAfter() does not exist
+
+2017-11-21 07:22:03____________
+Method WTW\Helpers\globalHelper::testFilterAfter() does not exist
+
