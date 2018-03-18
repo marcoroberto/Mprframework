@@ -4,15 +4,15 @@ define('SERVER', 'DEV'); // DEV, UAT, CAT, PROk
 define('CHARSET', 'iso-8859-1');
 
 if (!defined('PATH_ROOT')) {
-    define('PATH_ROOT', 'C:/inetpub/wwwroot/framework/framework');
+    define('PATH_ROOT', 'C:/inetpub/wwwroot/framework/master');
 }
 
 if (!defined('PATH_FROM_WEB_ROOT')) {
-    define('PATH_FROM_WEB_ROOT', 'framework/framework/');
+    define('PATH_FROM_WEB_ROOT', 'framework/master/');
 }
 
 if (!defined('PATH_ERRORS')) {
-    define('PATH_ERRORS', 'C:/inetpub/wwwroot/framework/framework/logs/mbf_error_log.err');
+    define('PATH_ERRORS', 'C:/inetpub/wwwroot/framework/master/logs/mbf_error_log.err');
 }
 
 if (!defined('URL_RELATIVO')) {
