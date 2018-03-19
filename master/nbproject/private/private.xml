@@ -12,17 +12,10 @@
             <file>file:/D:/workspaces_tfs2010/mybenflex/mybenflex/Branches/New%20Ideas/backend/vendor/autoload.php</file>
         </group>
         <group name="MPR Framework">
-            <file>file:/C:/inetpub/wwwroot/framework/framework/WTW/MVC/Controller.class.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/constants.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/WTW/MVC/View.class.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/WTW/helpers/Input.class.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/WTW/helpers/inputParameters.class.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/index.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/Models/home.class.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/web.config</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/WTW/helpers/globalHelper.class.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/Controllers/Home.class.php</file>
-            <file>file:/C:/inetpub/wwwroot/framework/framework/WTW/MVC/Model.class.php</file>
+            <file>file:/C:/inetpub/wwwroot/framework/master/WTW/MVC/Controller.class.php</file>
+            <file>file:/C:/inetpub/wwwroot/framework/master/WTW/MVC/Filter.class.php</file>
+            <file>file:/C:/inetpub/wwwroot/framework/master/index.php</file>
+            <file>file:/C:/inetpub/wwwroot/framework/master/Controllers/Home.class.php</file>
         </group>
     </open-files>
 </project-private>

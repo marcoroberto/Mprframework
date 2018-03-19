@@ -93,4 +93,10 @@ class Filter {
     {
         return $this->$name;
     }
+    
+    public function run($objController)
+    {
+        echo \WTW\Helpers\GlobalHelper::showDebug($objController);
+        die();
+    }
 }

@@ -190,9 +190,11 @@ class Controller {
         }
         
         // before filters = 'ACTION, CACHE, AUTHORIZE
-        if (!empty($this->data)) {
-            echo \WTW\Helpers\globalHelper::showDebug($this->data->filterData);
-            die();
+        if (!empty($this->data->filterData->elements)) {
+            foreach ($this->data->filterData->elements as $index => $objFilter) {
+                $objFilter->run($this);
+            }
+            die('befor filter done!');
         }
         die('no filters!');
         
