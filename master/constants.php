@@ -46,3 +46,6 @@ define('CONTROLLERS_FOLDER', 'Controllers');
 define('MODEL_FOLDER', 'Models');
 define('VIEW_FOLDER', 'Views');
 define('PATH_VIEWS', PATH_ROOT . DIRECTORY_SEPARATOR . VIEW_FOLDER . DIRECTORY_SEPARATOR);
+
+// identity
+define('LOGIN_FORWARD', 'errors/login.php');

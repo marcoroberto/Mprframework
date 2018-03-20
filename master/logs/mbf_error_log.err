@@ -440,3 +440,9 @@ Method WTW\Helpers\globalHelper::testFilterAfter() does not exist
 2017-11-21 07:22:03____________
 Method WTW\Helpers\globalHelper::testFilterAfter() does not exist
 
+2018-03-19 22:26:47____________
+ERROR 8: Undefined variable: action on C:\inetpub\wwwroot\framework\master\WTW\MVC\Filter.class.php line 29
+
+2018-03-19 22:27:24____________
+Action Filter:: key RESULT not allowed!
+

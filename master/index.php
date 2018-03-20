@@ -61,4 +61,6 @@ try {
     \WTW\error\mbfErrorHandler::errHandlerTryCatch($ex);
 } catch (\WTW\Error\ControllerException $ex) {
     \WTW\error\mbfErrorHandler::errHandlerTryCatch($ex);
+} catch (\WTW\Error\FilterException $ex) {
+    \WTW\error\mbfErrorHandler::errHandlerTryCatch($ex);
 }

@@ -8,13 +8,13 @@ namespace WTW\MVC;
  */
 class Filter {
     protected $key = '';
-    protected $action = '';
     protected $callable = '';
     protected $params = array();
     
     private $acceptedKeys = array(
         'AUTHORIZE',
         'ACTION',
+        'RESULT',
         'CACHE'
     );
     
@@ -23,10 +23,9 @@ class Filter {
         'actionAfter'
     );
     
-    public function __construct($key, $action = '', $callable = '', $params = array())
+    public function __construct($key, $callable = '', $params = array())
     {
         $this->setKey($key);
-        $this->setAction($action);
         $this->setCallable($callable);
         $this->setParams($params);
     }
@@ -94,9 +93,40 @@ class Filter {
         return $this->$name;
     }
     
-    public function run($objController)
+    public function run(\WTW\MVC\Controller $objController)
     {
+        $res = null;
+        
+        if (empty($this->key)) {
+            throw new \WTW\error\FilterException('Filter:: filter method Filter->run, key can\'t be empty!');
+        }
+        
+        switch ($this->key) {
+            case 'AUTHORIZE':
+                $res = $this->runAuthorize($objController, $this->params);
+                break;
+            case 'ACTION':
+                break;
+            case 'RESULT':
+                break;
+            case 'CACHE':
+                break;
+            default:
+                throw new \WTW\error\FilterException('Filter:: filter method Filter->run, key ' . $this->key . ' not valid!');
+                break;
+        }
+        echo $this->key;die();
         echo \WTW\Helpers\GlobalHelper::showDebug($objController);
         die();
+        
+        return $res;
+    }
+    
+    protected function runAuthorize(\WTW\MVC\Controller $objController, array $params)
+    {
+        
+        $logged = \WTW\Identity\Login::hasLogin();
+        
+        
     }
 }
