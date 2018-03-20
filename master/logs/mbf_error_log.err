@@ -446,3 +446,9 @@ ERROR 8: Undefined variable: action on C:\inetpub\wwwroot\framework\master\WTW\M
 2018-03-19 22:27:24____________
 Action Filter:: key RESULT not allowed!
 
+2018-03-20 07:03:16____________
+ERROR 8: Undefined variable: oarams on C:\inetpub\wwwroot\framework\master\Controllers\Home.class.php line 43
+
+2018-03-20 07:03:49____________
+Controller:: controller base file C:/inetpub/wwwroot/framework/master/Controllers/Errors.class.php doesn't exist!
+

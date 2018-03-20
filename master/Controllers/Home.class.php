@@ -37,10 +37,7 @@ class Home extends \WTW\MVC\Controller {
     public function Xpto1Filters() : \WTW\MVC\FilterCollection
     {
         $obj = new \WTW\MVC\FilterCollection();
-        $params = array(
-            'forward' => LOGIN_FORWARD
-        );
-        $obj->addItem(new \WTW\MVC\Filter('AUTHORIZE', '', $oarams));
+        $obj->addItem(new \WTW\MVC\Filter('AUTHORIZE'));
         
         $params = array('obj' => $this->data);
         $obj->addItem(new \WTW\MVC\Filter('ACTION', '\WTW\Helpers\globalHelper::testFilterBefore', $params));

@@ -125,7 +125,16 @@ class Filter {
     protected function runAuthorize(\WTW\MVC\Controller $objController, array $params)
     {
         
+        if (empty($params['forward'])) {
+            $params['forward'] = LOGIN_FORWARD;
+        }
+        
         $logged = \WTW\Identity\Login::hasLogin();
+        
+        if (!$logged) {
+            header('Location: ' . LOGIN_FORWARD);
+            die();
+        }
         
         
     }
