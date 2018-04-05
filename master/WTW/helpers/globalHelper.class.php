@@ -188,6 +188,31 @@ class globalHelper {
         return $res;
     }
     
+    public static function getAppPath($webRoot, $appRoot)
+    {
+        $res = '';
+        
+        if (empty($webRoot)) {
+            return $res;
+        }
+        
+        if (empty($appRoot)) {
+            return $res;
+        }
+        
+        $arrWebRoot = explode('/', $webRoot);
+        $arrAppRoot = explode('/', $appRoot);
+        
+        foreach ($arrAppRoot as $ind => $folder) {
+            $curWebRootFolder = (!empty($arrWebRoot[$ind])) ? $arrWebRoot[$ind] : '';
+            if (!empty($folder) && ($curWebRootFolder === '' || !strcmp($curWebRootFolder, $folder)==0)) {
+                $res .= $folder . '/';
+            }
+        }
+        
+        return $res;
+    }
+    
 /**
      * This validator checks if the $value is a valid email address.
      * @param string $value The data value to be validated.

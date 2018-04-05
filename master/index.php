@@ -8,7 +8,6 @@ try {
     // librarys to include
     require_once('vendor/autoload.php');
     require_once('constants.php');
-    require_once(LIBRARY_FOLDER . 'helpers\globalHelper.class.php');
     spl_autoload_register('WTW\helpers\globalHelper::autoloadClasses');
     \WTW\error\mbfErrorHandler::setDebugMode(DEBUG_MODE);
     set_error_handler('\WTW\error\mbfErrorHandler::errHandlerPHP');

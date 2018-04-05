@@ -3,16 +3,22 @@ define('ENV', 'web');
 define('SERVER', 'DEV'); // DEV, UAT, CAT, PROk
 define('CHARSET', 'iso-8859-1');
 
+require_once('WTW\helpers\globalHelper.class.php');
+
+$pathThis = \WTW\Helpers\globalHelper::normalizePath(__DIR__);
+$pathWebRoot = \WTW\Helpers\globalHelper::normalizePath(realpath(filter_input(INPUT_SERVER, 'DOCUMENT_ROOT')));
+$appRelativePath = \WTW\Helpers\globalHelper::getAppPath($pathWebRoot, $pathThis);
+
 if (!defined('PATH_ROOT')) {
-    define('PATH_ROOT', 'C:/inetpub/wwwroot/framework/master');
+    define('PATH_ROOT', $pathThis);
 }
 
 if (!defined('PATH_FROM_WEB_ROOT')) {
-    define('PATH_FROM_WEB_ROOT', 'framework/master/');
+    define('PATH_FROM_WEB_ROOT', $appRelativePath);
 }
 
 if (!defined('PATH_ERRORS')) {
-    define('PATH_ERRORS', 'C:/inetpub/wwwroot/framework/master/logs/mbf_error_log.err');
+    define('PATH_ERRORS', $pathThis . '/logs/mbf_error_log.err');
 }
 
 if (!defined('URL_RELATIVO')) {
