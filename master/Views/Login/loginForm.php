@@ -21,10 +21,13 @@
                 <input type="password" name="password" id="paramPassword" placeholder="password">
             </div>
             <div id="divSubmit">
-                <button name="submit" type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </div>
             <input type="hidden" name="controller" value="Login">
             <input type="hidden" name="action" value="signin">
+            <div id="divToken">
+                <input type="text" name="token" value="<?php echo $data->token; ?>"
+            </div>
         </form>
         <script language="javascript" src="js/global.js"></script>
     </body>

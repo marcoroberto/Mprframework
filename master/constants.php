@@ -9,6 +9,8 @@ $pathThis = \WTW\Helpers\globalHelper::normalizePath(__DIR__);
 $pathWebRoot = \WTW\Helpers\globalHelper::normalizePath(realpath(filter_input(INPUT_SERVER, 'DOCUMENT_ROOT')));
 $appRelativePath = \WTW\Helpers\globalHelper::getAppPath($pathWebRoot, $pathThis);
 
+define('FILTER_VALIDATE_STRING', '');
+
 if (!defined('PATH_ROOT')) {
     define('PATH_ROOT', $pathThis);
 }

@@ -452,3 +452,114 @@ ERROR 8: Undefined variable: oarams on C:\inetpub\wwwroot\framework\master\Contr
 2018-03-20 07:03:49____________
 Controller:: controller base file C:/inetpub/wwwroot/framework/master/Controllers/Errors.class.php doesn't exist!
 
+2018-04-05 21:50:02____________
+ERROR 8: Undefined variable: inputs on C:\inetpub\wwwroot\framework\master\testsDev\testLogin.php line 21
+
+2018-04-05 21:50:57____________
+Path C:/inetpub/wwwroot/framework/master//Views/Login/ is not a valid path or is not accessible!
+
+2018-04-05 22:07:02____________
+Path C:/inetpub/wwwroot/framework/master//Views/Login/ is not a valid path or is not accessible!
+
+2018-04-05 22:15:53____________
+Controller:: controller method \Login->Loginform not found!
+
+2018-04-05 22:16:36____________
+ERROR 8: Undefined property: stdClass::$name on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 19
+
+2018-04-06 06:23:11____________
+ERROR 8: Undefined variable: inputsAfter on C:\inetpub\wwwroot\framework\master\testsDev\testLogin.php line 27
+
+2018-04-06 06:24:03____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 06:25:18____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 06:31:26____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 06:32:57____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 06:33:11____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 06:33:29____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 07:13:19____________
+ERROR 8: Undefined index: action on C:\inetpub\wwwroot\framework\master\testsDev\testLogin.php line 26
+
+2018-04-06 07:14:35____________
+ERROR 8: Undefined variable: nputs on C:\inetpub\wwwroot\framework\master\testsDev\testLogin.php line 18
+
+2018-04-06 07:16:08____________
+ERROR 2: strlen() expects parameter 1 to be string, object given on C:\inetpub\wwwroot\framework\master\WTW\MVC\Controller.class.php line 26
+
+2018-04-06 07:16:50____________
+ERROR 4096: Object of class WTW\Helpers\Input could not be converted to string on C:\inetpub\wwwroot\framework\master\testsDev\testLogin.php line 41
+
+2018-04-06 07:19:20____________
+ERROR 8: Undefined property: WTW\Helpers\inputParameters::$action on C:\inetpub\wwwroot\framework\master\testsDev\testLogin.php line 38
+
+2018-04-06 07:20:03____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 07:20:27____________
+inputParamteres: param username is not in whitelist for $_POST!
+
+2018-04-06 07:23:56____________
+ERROR 8: Use of undefined constant valideInputs - assumed 'valideInputs' on C:\inetpub\wwwroot\framework\master\testsDev\testLogin.php line 37
+
+2018-04-07 09:49:32____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDATE_STRING on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 534
+
+2018-04-07 09:53:26____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDATE_STRING on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 534
+
+2018-04-07 10:00:52____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDATE_STRING on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 534
+
+2018-04-07 10:01:24____________
+inputParamteres: param submit is not in whitelist for $_POST!
+
+2018-04-07 10:12:45____________
+ERROR 8: Undefined property: Login::$inputs on C:\inetpub\wwwroot\framework\master\Controllers\Login.class.php line 41
+
+2018-04-07 10:26:11____________
+ERROR 8: Array to string conversion on C:\inetpub\wwwroot\framework\master\Controllers\Login.class.php line 41
+
+2018-04-07 11:51:10____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 28
+
+2018-04-07 11:51:12____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 28
+
+2018-04-07 11:51:23____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 28
+
+2018-04-07 11:51:25____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 28
+
+2018-04-07 11:54:08____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-07 11:54:12____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-07 11:59:16____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-07 11:59:18____________
+ERROR 8: Undefined variable: token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-07 12:03:53____________
+ERROR 8: Undefined property: stdClass::$token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-07 12:29:35____________
+ERROR 8: Undefined property: stdClass::$token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-07 12:29:37____________
+ERROR 8: Undefined property: stdClass::$token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+

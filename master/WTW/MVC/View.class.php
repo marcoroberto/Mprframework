@@ -58,7 +58,7 @@ class View {
         }
         
         $data = $this->getData();
-
+        //echo \WTW\Helpers\globalHelper::showDebug($data);die();
         ob_start();
         include($file);
         $content = ob_get_clean();

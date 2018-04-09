@@ -13,9 +13,12 @@
         </group>
         <group name="MPR Framework">
             <file>file:/C:/inetpub/wwwroot/framework/master/WTW/MVC/Controller.class.php</file>
+            <file>file:/C:/inetpub/wwwroot/framework/master/WTW/identity/Login.class.php</file>
             <file>file:/C:/inetpub/wwwroot/framework/master/WTW/MVC/Filter.class.php</file>
             <file>file:/C:/inetpub/wwwroot/framework/master/index.php</file>
             <file>file:/C:/inetpub/wwwroot/framework/master/Controllers/Home.class.php</file>
+            <file>file:/C:/inetpub/wwwroot/framework/master/errors/login.php</file>
+            <file>file:/C:/inetpub/wwwroot/framework/master/constants.php</file>
         </group>
     </open-files>
 </project-private>

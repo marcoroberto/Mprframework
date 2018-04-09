@@ -175,6 +175,11 @@ class inputParameters implements Collection {
         
     }
     
+    // method alias
+    public function getValidatedItens() {
+        return $this->listValidatedItens();
+    }
+    
     public function listValidatedItens()
     {
         $result = new \stdClass();

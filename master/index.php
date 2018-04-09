@@ -36,8 +36,7 @@ try {
             $valideInputs->action['validatedValue']
     );
     $controller->setAuthorizedInputs($inputs);
-    $content = $controller->run();
-    
+    $content = $controller->run();    
     $inputsAfter = $controller->getAuthorizedInputs();
     
     // only authorized parameters

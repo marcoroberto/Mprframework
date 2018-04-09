@@ -76,8 +76,18 @@ class Controller {
         $this->view = $value;
     }
     
-    public function getView()
+    public function getView($paramView = null)
     {
+        if (!empty($paramView)) {
+            $viewName = \WTW\Helpers\globalHelper::normalizePath(
+                    PATH_ROOT . DIRECTORY_SEPARATOR . VIEW_FOLDER . DIRECTORY_SEPARATOR . $this->getController() . DIRECTORY_SEPARATOR
+            )  . $paramView . '.php';
+
+            if ($this->checkViewFile($viewName)) {
+                $this->setView($viewName);
+            }
+        }
+        
         return $this->view;
     }
     
@@ -102,6 +112,11 @@ class Controller {
     protected function setData(\stdClass $obj)
     {
         $this->data = $obj;
+    }
+    
+    protected function addData(\stdClass $obj)
+    {
+        $this->data = (object) array_merge((array) $this->data, (array) $obj);
     }
     
     public function run(string $controller = '', string $action = '')
@@ -150,7 +165,7 @@ class Controller {
             
             // gets existing filters
             $data->filterData = $this->getFilters();
-            $this->setData($data);
+            $this->addData($data);
             
             // applys before filters to action
             $this->applyFilter('before');
@@ -194,12 +209,12 @@ class Controller {
             foreach ($this->data->filterData->elements as $index => $objFilter) {
                 $objFilter->run($this);
             }
-            die('befor filter done!');
+            //die('befor filter done!');
         }
-        die('no filters!');
+        //die('no filters!');
         
         // after filters = 'ACTION'
-        die('apply before filters');
+        //die('apply before filters');
     }
     
     protected function checkControllerFile($filename)
@@ -284,11 +299,11 @@ class Controller {
         }
     }
     
-    public function renderView()
+    public function renderView($paramView = null)
     {
         $html = '';
         
-        $view = $this->getView();
+        $view = $this->getView($paramView);
         
         if (empty($view)) {
             return '';

@@ -213,7 +213,7 @@ class globalHelper {
         return $res;
     }
     
-/**
+    /**
      * This validator checks if the $value is a valid email address.
      * @param string $value The data value to be validated.
      * @param array $arrOptions The validator options:

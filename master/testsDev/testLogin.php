@@ -4,27 +4,57 @@ ini_set("display_errors", '1');
 session_start();
 session_regenerate_id();
 
-require_once('../constants.php');
-die('test login END!');
-try {
-    // librarys to include
-    /*
-    define('PATH_ROOT', 'C:/inetpub/wwwroot/framework/framework');
-    define('PATH_FROM_WEB_ROOT', 'framework/framework/');
-    define('PATH_ERRORS', 'C:/inetpub/wwwroot/framework/framework/logs/mbf_error_log.err');
-     * 
-     */
-    
-    
+try {    
     define('URL_RELATIVO', '../');
-    
+    require_once('../constants.php');
     require_once('../vendor/autoload.php');
     require_once('../constants.php');
     spl_autoload_register('WTW\helpers\globalHelper::autoloadClasses');
     WTW\error\mbfErrorHandler::setDebugMode(DEBUG_MODE);
     set_error_handler('WTW\error\mbfErrorHandler::errHandlerPHP');
     
-    die('testes de login');
+    // authorized inputs collection
+    $inputs = new \WTW\Helpers\inputParameters();
+    $inputs->addItem(new \WTW\Helpers\inputParam(
+            'controller',
+            \WTW\Helpers\Input::INPUT_BOTH,
+            \WTW\Helpers\Input::TYPE_METHOD
+        ), 'controller'
+    );
+    $inputs->addItem(new \WTW\Helpers\inputParam(
+            'action',
+            \WTW\Helpers\Input::INPUT_BOTH,
+            \WTW\Helpers\Input::TYPE_METHOD
+        ), 'action'
+    );
+    
+    // list of validate inputs
+    $valideInputs = $inputs->listValidatedItens();
+    
+    // call the controller
+    (string) $cont = 'Login';
+    (string) $act = 'LoginForm';
+    
+    if (!empty($valideInputs->controller['validatedValue'])) {
+        $cont = $valideInputs->controller['validatedValue'];
+    }
+    if (!empty($valideInputs->action['validatedValue'])) {
+        $act = $valideInputs->action['validatedValue'];
+    }
+    
+    $controller = new \WTW\MVC\Controller(
+            $cont,
+            $act
+    );
+    $controller->setAuthorizedInputs($inputs);
+    $content = $controller->run();    
+    $inputsAfter = $controller->getAuthorizedInputs();
+    
+    // only authorized parameters
+    $inputsAfter->checkSentParameters();
+    
+    echo $content;
+    die();
 } catch (Exception $e) {
     \WTW\error\mbfErrorHandler::errHandlerTryCatch($e);
 }
