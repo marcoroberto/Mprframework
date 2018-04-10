@@ -40,16 +40,20 @@ class Login extends \WTW\MVC\Controller {
                 \WTW\Helpers\Input::SANITIZE_STRING,
                 \WTW\Helpers\Input::VALIDATE_STRING
             ), 'password');
+        $this->addAuthorizedItem(new WTW\Helpers\inputParam(
+                'form_token',
+                \WTW\Helpers\Input::INPUT_POST,
+                \WTW\Helpers\Input::TYPE_STRING,
+                \WTW\Helpers\Input::SANITIZE_STRING,
+                \WTW\Helpers\Input::VALIDATE_STRING
+            ), 'form_token');
         
         $valideInputs = $this->getAuthorizedInputs()->getValidatedItens();
         
         $objLogin = new \WTW\Identity\Login();
         $objLogin->checkSigninData($valideInputs);
         
-        echo \WTW\Helpers\GlobalHelper::showDebug($username);
-        echo \WTW\Helpers\GlobalHelper::showDebug($valideInputs);
-        die();
-        
+        die('signin done!');
         return $result;
     }
     

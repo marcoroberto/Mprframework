@@ -26,6 +26,14 @@ try {
             \WTW\Helpers\Input::TYPE_METHOD
         ), 'action'
     );
+    $inputs->addItem(new \WTW\Helpers\inputParam(
+            'sess_token',
+            \WTW\Helpers\Input::INPUT_POST,
+            \WTW\Helpers\Input::TYPE_SESSION_TOKEN,
+            \WTW\Helpers\Input::SANITIZE_STRING,
+            \WTW\Helpers\Input::VALIDATE_SESSION_TOKEN
+        ), 'sess_token'
+    );
     
     // list of validate inputs
     $valideInputs = $inputs->listValidatedItens();

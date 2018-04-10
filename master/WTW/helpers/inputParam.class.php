@@ -69,6 +69,7 @@ class inputParam {
     const VALIDATE_CALLBACK = 'FILTER_VALIDATE_CALLBACK';
     const VALIDATE_IMAGE = 'FILTER_VALIDATE_IMAGE';
     const VALIDATE_FILE = 'FILTER_VALIDATE_FILE';
+    const VALIDATE_SESSION_TOKEN = 'FILTER_VALIDATE_SESSION_TOKEN';
     
     protected $validateTypes = array(
         self::VALIDATE_STRING,
@@ -86,7 +87,8 @@ class inputParam {
         self::VALIDATE_TIME,
         self::VALIDATE_CALLBACK,
         self::VALIDATE_IMAGE,
-        self::VALIDATE_FILE
+        self::VALIDATE_FILE,
+        self::VALIDATE_SESSION_TOKEN
     );
 
     // types to use on requestVariable
@@ -108,6 +110,7 @@ class inputParam {
     const TYPE_FILE = 'FILE';
     const TYPE_ARRAY = 'ARRAY';
     const TYPE_METHOD = 'METHOD';
+    const TYPE_SESSION_TOKEN = 'SESSION_TOKEN';
     
     protected $types = array(
         self::TYPE_STRING,
@@ -127,7 +130,8 @@ class inputParam {
         self::TYPE_IMAGE,
         self::TYPE_FILE,
         self::TYPE_ARRAY,
-        self::TYPE_METHOD
+        self::TYPE_METHOD,
+        self::TYPE_SESSION_TOKEN
     );
     
     public function __construct(

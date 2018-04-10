@@ -64,6 +64,7 @@ class Input {
     const VALIDATE_CALLBACK = 'FILTER_VALIDATE_CALLBACK';
     const VALIDATE_IMAGE = 'FILTER_VALIDATE_IMAGE';
     const VALIDATE_FILE = 'FILTER_VALIDATE_FILE';
+    const VALIDATE_SESSION_TOKEN = 'FILTER_VALIDATE_SESSION_TOKEN';
     
     protected $validateTypes = array(
         self::VALIDATE_STRING,
@@ -81,7 +82,8 @@ class Input {
         self::VALIDATE_TIME,
         self::VALIDATE_CALLBACK,
         self::VALIDATE_IMAGE,
-        self::VALIDATE_FILE
+        self::VALIDATE_FILE,
+        self::VALIDATE_SESSION_TOKEN
     );
 
     // types to use on requestVariable
@@ -103,6 +105,7 @@ class Input {
     const TYPE_FILE = 'FILE';
     const TYPE_ARRAY = 'ARRAY';
     const TYPE_METHOD = 'METHOD';
+    const TYPE_SESSION_TOKEN = 'SESSION_TOKEN';
     
     protected $types = array(
         self::TYPE_STRING,
@@ -122,7 +125,8 @@ class Input {
         self::TYPE_IMAGE,
         self::TYPE_FILE,
         self::TYPE_ARRAY,
-        self::TYPE_METHOD
+        self::TYPE_METHOD,
+        self::TYPE_SESSION_TOKEN
     );
     
     protected $variableName;
@@ -1692,4 +1696,73 @@ class Input {
         return $valuePosted;
     }
     
+    public function requestSession_token(
+        $varName, 
+        $inputSource = self::INPUT_BOTH,
+        $sanitizeRule = self::SANITIZE_STRING, 
+        $validateRule = self::VALIDATE_REGEXP
+    ) {
+        $inputs = array();
+        
+        switch ($inputSource) {
+            case 'INPUT_POST_GET':
+                $inputs[] = INPUT_GET;
+                $inputs[] = INPUT_POST;
+                break;
+            default:
+                $inputs[] = constant($inputSource);
+                break;
+        }
+        
+        $valuePosted = null;
+        
+        if (is_null($sanitizeRule)) {
+            $sanitizeRule = FILTER_SANITIZE_STRING;
+        } else {
+            $sanitizeRule = constant($sanitizeRule);
+        }
+        
+        if (is_null($validateRule)) {
+            $validateRule = '';
+        } else {
+            $validateRule = $validateRule;
+        }
+        
+        foreach ($inputs as $input) {
+            // gets sanitized value
+            $tmp = filter_input($input, $varName, $sanitizeRule);
+                        
+            if (!is_null($tmp)) {
+                // validates
+                if (empty($validateRule)) {
+                    $tmp1 = true;
+                } else {
+                    if (strcmp($_SESSION['session_token'], $tmp) == 0) {
+                        $tmp1 = true;
+                    } else {
+                        $tmp1 = false;
+                    }
+                }
+
+                if ($tmp1 === false ) {
+                    $this->setIsValid(false);
+                    $this->setIsValidMessage('Invalid Session Token in input ' . $this->getVariableName() . '!');
+                } else {
+                    $this->setIsValid(true);
+                    $this->setIsValidMessage('');
+                }
+                
+                $valuePosted = $tmp;
+            }
+        }
+                        
+        $this->setRequestValue($valuePosted);
+        if ($this->getisValid()) {
+            $this->setValidatedValue($valuePosted);
+        } else {
+            $this->setValidatedValue(null);
+        }
+        return $valuePosted;
+                
+    }
 }

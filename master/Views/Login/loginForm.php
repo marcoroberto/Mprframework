@@ -26,7 +26,7 @@
             <input type="hidden" name="controller" value="Login">
             <input type="hidden" name="action" value="signin">
             <div id="divToken">
-                <input type="text" name="token" value="<?php echo $data->token; ?>"
+                <?php echo $data->Helper::generateFormToken('signin');?>
             </div>
         </form>
         <script language="javascript" src="js/global.js"></script>

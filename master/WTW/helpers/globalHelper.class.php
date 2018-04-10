@@ -335,4 +335,32 @@ class globalHelper {
         echo showDebug($params['obj']);
     }
     
+    public static function generateSessionToken()
+    {
+        $token = bin2hex(random_bytes(32));
+        $_SESSION['session_token'] = $token;
+        return $token;
+    }
+    
+    public static function generateFormToken($formKey)
+    {
+        if (!isset($_SESSION['session_token'])) {
+            self::generateSessionToken();
+        }
+        return hash_hmac('sha256', $formKey, $_SESSION['session_token']);
+    }
+    
+    public static function checkFormToken($formKey, $tokenPosted)
+    {
+        if (!isset($_SESSION['session_token'])) {
+            return false;
+        }
+        
+        $tokenShouldBe = hash_hmac('sha256', $formKey, $_SESSION['session_token']);
+        if (strcmp($tokenPosted, $tokenShouldBe) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

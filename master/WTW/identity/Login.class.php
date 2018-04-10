@@ -15,16 +15,27 @@ class Login {
     public function checkSigninData($inputs = array())
     {
         if (empty($inputs->username['validatedValue'])) {
-            Throw new Exception('Identity\Login: parameter username is necessary!');
+            Throw new \Exception('Identity\Login: parameter username is necessary!');
         }
         
         if (empty($inputs->password['validatedValue'])) {
-            Throw new Exception('Identity\Login: parameter password is necessary!');
+            Throw new \Exception('Identity\Login: parameter password is necessary!');
         }
         
-        if (empty($inputs->token['validatedValue'])) {
-            Throw new Exception('Identity\Login: parameter token is necessary!');
+        if (empty($inputs->sess_token['validatedValue'])) {
+            Throw new \Exception('Identity\Login: parameter sess_token is necessary!');
         }
+        
+        if (empty($inputs->form_token['validatedValue'])) {
+            Throw new \Exception('Identity\Login: parameter form_token is necessary!');
+        }
+        
+        $tokenPosted = $inputs->form_token['validatedValue'];
+        $valid = \WTW\Helpers\GlobalHelper::checkFormToken('signin', $tokenPosted);
+        if (!$valid) {
+            throw new \Exception('Identity|login: Form token is invalid!');
+        }
+        
         
     }
 }

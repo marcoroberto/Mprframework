@@ -563,3 +563,63 @@ ERROR 8: Undefined property: stdClass::$token on C:\inetpub\wwwroot\framework\ma
 2018-04-07 12:29:37____________
 ERROR 8: Undefined property: stdClass::$token on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
 
+2018-04-10 05:48:04____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDATE_SESSION_TOKEN on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 536
+
+2018-04-10 06:07:17____________
+ERROR 2: constant(): Couldn't find constant self::FILTER_VALIDATE_SESSION_TOKEN on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 539
+
+2018-04-10 06:09:14____________
+ERROR 2: constant(): Couldn't find constant self::FILTER_VALIDATE_SESSION_TOKEN on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 539
+
+2018-04-10 06:16:01____________
+WTW\HelpersWTW\Helpers\Input:: request method requestSession_token not found!
+
+2018-04-10 06:16:38____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDATE_SESSION_TOKEN on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 1732
+
+2018-04-10 06:16:53____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDATE_SESSION_TOKEN on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 1732
+
+2018-04-10 06:20:06____________
+ERROR 2: constant(): Couldn't find constant FILTER_VALIDATE_SESSION_TOKEN on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 1732
+
+2018-04-10 06:26:31____________
+ERROR 8: Undefined property: stdClass::$ViewHelper on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-10 06:26:33____________
+ERROR 8: Undefined property: stdClass::$ViewHelper on C:\inetpub\wwwroot\framework\master\Views\Login\loginForm.php line 29
+
+2018-04-10 06:26:58____________
+ERROR 8: Undefined index: sessiom_token on C:\inetpub\wwwroot\framework\master\WTW\helpers\globalHelper.class.php line 350
+
+2018-04-10 06:35:19____________
+ERROR 8: Undefined variable: 95cadf673256d6e0a73fd25267647d72e5c84a5cd18009209b069527221d4344 on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 1744
+
+2018-04-10 06:38:32____________
+ERROR 2: filter_var() expects parameter 2 to be integer, string given on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 554
+
+2018-04-10 06:41:32____________
+ERROR 2: filter_var() expects parameter 2 to be integer, string given on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 554
+
+2018-04-10 06:43:49____________
+ERROR 2: filter_var() expects parameter 2 to be integer, string given on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 555
+
+2018-04-10 06:44:22____________
+ERROR 2: filter_var() expects parameter 2 to be integer, string given on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 555
+
+2018-04-10 06:45:37____________
+ERROR 2: filter_var() expects parameter 2 to be integer, string given on C:\inetpub\wwwroot\framework\master\WTW\helpers\Input.class.php line 555
+
+2018-04-10 07:02:19____________
+ERROR 8: Undefined variable: username on C:\inetpub\wwwroot\framework\master\Controllers\Login.class.php line 49
+
+2018-04-10 07:17:42____________
+ERROR 8: Undefined property: stdClass::$form_token on C:\inetpub\wwwroot\framework\master\Controllers\Login.class.php line 50
+
+2018-04-10 07:21:45____________
+inputParamteres: param form_token is not in whitelist for $_POST!
+
+2018-04-10 07:26:50____________
+Identity|login: Form token is invalid!
+

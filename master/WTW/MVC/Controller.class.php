@@ -165,6 +165,7 @@ class Controller {
             
             // gets existing filters
             $data->filterData = $this->getFilters();
+            $data->Helper = new ViewHelper();
             $this->addData($data);
             
             // applys before filters to action
